@@ -24,7 +24,7 @@ if (fs.existsSync(sessionFolder)) {
 let app = (global.app = express());
 const router = express.Router();
 
-const PORT = 3001 || 3030;
+const PORT = 3000;
 
 const makeWASocket = require('@whiskeysockets/baileys').default;
 
