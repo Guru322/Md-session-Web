@@ -62,6 +62,7 @@ app.use(
             const { connection, lastDisconnect } = s;
     
             if (connection === 'open') {
+              await delay(1000 * 5);
               let botsession = fs.readFileSync('./SESSION/creds.json');
    
               await delay(1000 * 10);
